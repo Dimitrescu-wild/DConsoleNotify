@@ -1,4 +1,6 @@
 {
+  "name": "DConsoleNotify",
+  "version": "0.0.1",
   "main": "dist/index.js",
   "scripts": {
     "start": "webpack-dev-server --hot --port 8436 --open",

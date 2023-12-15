@@ -1,7 +1,7 @@
-#DConsoleNotify
+# DConsoleNotify
 Библиотека предназначена для перехвата вывода в консоль данных и отображения их на странице в виде модальных уведомлений.
 
-##USE
+## USE
 Для использование DebNotify подключите библиотеку через `sctipt` в html
 
 `new DConsoleNotify.DConsoleNotify(options)`
@@ -18,7 +18,7 @@
 6. error: boolean
 7. lifetime: int    // время жизни уведомления, значение миллисекундах
 
-##EXAMPLE
+## EXAMPLE
 Для вывода нескольких типов уведомлений:
 
 `const options = { warn: true, error: true}`
@@ -36,7 +36,7 @@
 
 Если указать `lifetime` как `0`, то уведомления не будут удаляться автоматически. 
 
-##DETAIL
+## DETAIL
 Библиотека переписывает выбранные выводы в консоль функции, 
 однако функция вывода в консоль тоже доступна, 
 для этого необходимо добавить old к любой переопределенной вам функции.
@@ -44,7 +44,6 @@
 
 ```
 const options = { error: true}
-
 
 new DConsoleNotify.DConsoleNotify(options)
 
