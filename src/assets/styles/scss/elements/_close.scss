@@ -1,0 +1,36 @@
+.close-icon {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  cursor: pointer;
+  transition: all .3s ease;
+}
+
+.close-icon::before,
+.close-icon::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 66%;
+  height: 6%;
+  background-color: #000;
+  transform-origin: center;
+  transition: all .3s ease;
+}
+
+.close-icon::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.close-icon::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.close-icon:active::before {
+  transform: translate(-50%, -50%) rotate(45deg) scale(0.8);
+}
+
+.close-icon:active::after {
+  transform: translate(-50%, -50%) rotate(-45deg) scale(0.8);
+}
